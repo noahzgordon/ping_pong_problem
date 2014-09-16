@@ -8,39 +8,39 @@ After writing out the game logic, I began testing by pairing each player off and
 ##100 games per match-up
 
 ###Set 1
-Bruce vs. Serena: 68 (wins) to 32 (wins)
-Serena vs. Jean Claude: 39 to 61
-Jean Claude vs. Bruce:  80 to 20
-Bruce's Total: 88,
-Serena's Total: 71 
-Jean Claude's Total: 141
+	Bruce vs. Serena: 68 (wins) to 32 (wins)
+	Serena vs. Jean Claude: 39 to 61
+	Jean Claude vs. Bruce:  80 to 20
+	Bruce's Total: 88,
+	Serena's Total: 71 
+	Jean Claude's Total: 141
 
 ###Set 2
-Bruce vs. Serena: 73 to 27
-Serena vs. Jean Claude: 48 to 54
-Jean Claude vs. Bruce: 62 to 18
-Bruce's Total: 91
-Serena's Total: 73 
-Jean Claude's Total: 136
+	Bruce vs. Serena: 73 to 27
+	Serena vs. Jean Claude: 48 to 54
+	Jean Claude vs. Bruce: 62 to 18
+	Bruce's Total: 91
+	Serena's Total: 73 
+	Jean Claude's Total: 136
 
 ###Set 3
-Bruce vs. Serena: 73 to 27 
-Serena vs. Jean Claude: 28 to 72 
-Jean Claude vs. Bruce: 75 to 25
-Bruce's Total: 98 
-Serena's Total: 55
-Jean Claude's Total: 147
+	Bruce vs. Serena: 73 to 27 
+	Serena vs. Jean Claude: 28 to 72 
+	Jean Claude vs. Bruce: 75 to 25
+	Bruce's Total: 98 
+	Serena's Total: 55
+	Jean Claude's Total: 147
 
 I could definitely see a pattern emerging, but I doubled my sample size
 just to be certain.
 
 ##200 games per match-up
 
-Bruce's Total: 181, Serena's Total: 129, Jean Claude's Total: 290
+	Bruce's Total: 181, Serena's Total: 129, Jean Claude's Total: 290
 
-Bruce's Total: 178, Serena's Total: 140, Jean Claude's Total: 282
+	Bruce's Total: 178, Serena's Total: 140, Jean Claude's Total: 282
 
-Bruce's Total: 192, Serena's Total: 136, Jean Claude's Total: 272
+	Bruce's Total: 192, Serena's Total: 136, Jean Claude's Total: 272
 
 #Analysis
 
@@ -54,15 +54,15 @@ I think Jean Claude's greatest strength, though, is in his return rates. He focu
 
 With all this in mind I went about making my own custom player to trounce the competition. I named him Goku because his power level is *just that high*. In fact, in 200 matches with each player, he **didn't lose once**.
 
-vs. Bruce
-	wins: 200
-	losses: 0
-vs. Serena
-	wins: 200
-	losses: 0
-vs. Jean Claude
-	wins: 200
-	losses: 0
+	vs. Bruce
+		wins: 200
+		losses: 0
+	vs. Serena
+		wins: 200
+		losses: 0
+	vs. Jean Claude
+		wins: 200
+		losses: 0
 
 In most of these games, the opponent only got between 4 and 8 points. Why is that? Let's take a look at Goku's stats.
 

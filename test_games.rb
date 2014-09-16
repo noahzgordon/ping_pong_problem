@@ -63,86 +63,84 @@ goku_results = {
     losses: 0
   }
 }
-#
-# 100.times do
-#   game = Game.new(bruce, serena)
-#   game.play
-#
-#   if game.winner == bruce
-#     results[:bruce_serena][:bruce] += 1
-#     results[:bruce_total] += 1
-#   elsif game.winner == serena
-#     results[:bruce_serena][:serena] += 1
-#     results[:serena_total] += 1
-#   end
-# end
-#
-# 100.times do
-#   game = Game.new(serena, bruce)
-#   game.play
-#
-#   if game.winner == bruce
-#     results[:bruce_serena][:bruce] += 1
-#     results[:bruce_total] += 1
-#   elsif game.winner == serena
-#     results[:bruce_serena][:serena] += 1
-#     results[:serena_total] += 1
-#   end
-# end
-#
-# 100.times do
-#   game = Game.new(serena, jean_claude)
-#   game.play
-#
-#   if game.winner == serena
-#     results[:serena_jean][:serena] += 1
-#     results[:serena_total] += 1
-#   elsif game.winner == jean_claude
-#     results[:serena_jean][:jean] += 1
-#     results[:jean_total] += 1
-#   end
-# end
-#
-# 100.times do
-#   game = Game.new(jean_claude, serena)
-#   game.play
-#
-#   if game.winner == serena
-#     results[:serena_jean][:serena] += 1
-#     results[:serena_total] += 1
-#   elsif game.winner == jean_claude
-#     results[:serena_jean][:jean] += 1
-#     results[:jean_total] += 1
-#   end
-# end
-#
-# 100.times do
-#   game = Game.new(jean_claude, bruce)
-#   game.play
-#
-#   if game.winner == jean_claude
-#     results[:jean_bruce][:jean] += 1
-#     results[:jean_total] += 1
-#   elsif game.winner == bruce
-#     results[:jean_bruce][:bruce] += 1
-#     results[:bruce_total] += 1
-#   end
-# end
-#
-# 100.times do
-#   game = Game.new(bruce, jean_claude)
-#   game.play
-#
-#   if game.winner == jean_claude
-#     results[:jean_bruce][:jean] += 1
-#     results[:jean_total] += 1
-#   elsif game.winner == bruce
-#     results[:jean_bruce][:bruce] += 1
-#     results[:bruce_total] += 1
-#   end
-# end
-#
-# p results
+
+100.times do
+  game = Game.new(bruce, serena)
+  game.play
+
+  if game.winner == bruce
+    results[:bruce_serena][:bruce] += 1
+    results[:bruce_total] += 1
+  elsif game.winner == serena
+    results[:bruce_serena][:serena] += 1
+    results[:serena_total] += 1
+  end
+end
+
+100.times do
+  game = Game.new(serena, bruce)
+  game.play
+
+  if game.winner == bruce
+    results[:bruce_serena][:bruce] += 1
+    results[:bruce_total] += 1
+  elsif game.winner == serena
+    results[:bruce_serena][:serena] += 1
+    results[:serena_total] += 1
+  end
+end
+
+100.times do
+  game = Game.new(serena, jean_claude)
+  game.play
+
+  if game.winner == serena
+    results[:serena_jean][:serena] += 1
+    results[:serena_total] += 1
+  elsif game.winner == jean_claude
+    results[:serena_jean][:jean] += 1
+    results[:jean_total] += 1
+  end
+end
+
+100.times do
+  game = Game.new(jean_claude, serena)
+  game.play
+
+  if game.winner == serena
+    results[:serena_jean][:serena] += 1
+    results[:serena_total] += 1
+  elsif game.winner == jean_claude
+    results[:serena_jean][:jean] += 1
+    results[:jean_total] += 1
+  end
+end
+
+100.times do
+  game = Game.new(jean_claude, bruce)
+  game.play
+
+  if game.winner == jean_claude
+    results[:jean_bruce][:jean] += 1
+    results[:jean_total] += 1
+  elsif game.winner == bruce
+    results[:jean_bruce][:bruce] += 1
+    results[:bruce_total] += 1
+  end
+end
+
+100.times do
+  game = Game.new(bruce, jean_claude)
+  game.play
+
+  if game.winner == jean_claude
+    results[:jean_bruce][:jean] += 1
+    results[:jean_total] += 1
+  elsif game.winner == bruce
+    results[:jean_bruce][:bruce] += 1
+    results[:bruce_total] += 1
+  end
+end
 
 100.times do
   game = Game.new(goku, bruce)
@@ -211,4 +209,6 @@ end
 end
 
 
-p goku_results
+print "OVERALL RESULTS: " + results
+
+print "GOKU'S RESULTS: " + goku_results
